@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMG_INNE/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/index_style.css">
+    <title>RetroGamer</title>
+</head>
+
+<body onselectstart="return false" onselect="return false" oncopy="return false">
+    <section>
+        <header>
+            <nav>
+                <ul>
+                    <li class="logo"> <a href="index.html">Retro</br>Gamer</a> </li>
+                    <li class="burger"><span class="fa fa-bars"></span></li>
+                    <div class="menu">
+                        <li><a href="podstrony/home.php">HOME</a></li>
+                        <li><a href="podstrony/gry.php">GRY</a></li>
+                        <li><a href="podstrony/konsole.php">KONSOLE</a></li>
+                        <li><a href="podstrony/akcesoria.php">AKCESORIA</a></li>
+                        
+
+                    </div>
+
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="contentBx">
+                <h2 data-text="[Neon_Light]">Wejdź do świata RETRO</h2>
+                <P>Sklep Retro Gamer oferuje sprzedaż konsol, gier i akcesoriów do konsol. Najlepsze ceny, duży
+                    asortyment, ekspresowe wysyłki. Zapraszamy!</P>
+                <a class="odnosnik" href="podstrony/home.php">
+                    <div class="button" id="button1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Sklep
+                    </div>
+                </a>
+            </div>
+        </div>
+        <ul class="social">
+            <i class="fa fa-facebook-f sociale"></i>
+            <i class="fa fa-twitter sociale"></i>
+            <i class="fa fa-instagram sociale"></i>
+        </ul>
+    </section>
+
+    <script>
+        $('nav ul li.burger span').click(function () {
+            $('nav ul div.menu').toggleClass("show");
+            $('nav ul li.burger span').toggleClass("show");
+        });
+
+    </script>
+
+
+
+
+</body>
+
+</html>

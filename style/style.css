@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+nav{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #6aafff;
+    padding: 15px 70px 10px 70px;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+nav ul li.logo{
+    flex: 1;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 20px;
+
+}
+.menu li a{
+    text-decoration: none;
+}
+nav ul li.logo a{
+    text-decoration: none;
+    color: white;
+}
+nav ul div.menu{
+    padding: 0 25px;
+    display: inline-flex;
+}
+nav ul div.menu a{
+    font-size: 18px;
+    padding: 0 12px;
+    font-weight: 500;
+    transition: 0.2s;
+    color:white;
+}
+nav ul div.menu a:hover{
+    color: #023672;
+}
+.cyferka{ /* TO JEST TA FIKUŚNA CYFERKA OBOK KOSZYKA :) JAK COŚ */
+    color: white; 
+}
+nav ul li.burger{
+    font-size: 29px;
+    flex: 1;
+    padding: 0 40px;
+    display: none;
+}
+nav ul li.burger span{
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: 42px;
+    border: 1px solid 151515;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav ul li.burger span.show:before{
+    content: '\f00d';
+}
+.main-section{
+    min-height: calc(100vh - 70px);
+    width: 100%;
+    background-color: #222222;
+}
+.produkty{
+    z-index: -1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin: 0px auto 0px auto;
+    justify-content: center;
+}
+.box{
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    z-index: -1;
+}
+
+#button {
+    display: inline-block;
+    background-color:  #6aafff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #023672;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+.stopeczka{
+    min-height: 200px;
+    background-color: #6aafff;
+    font-size: 14px;
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.about{
+padding: 30px 0 10px 0;
+height: 150px;
+}
+.about ul li{
+    padding: 5px;
+}
+.about ul li a{ 
+    transition: 0.2s;
+    color:white;
+}
+.about ul li a:hover{
+    color: #023672;
+}
+.social{
+    display: flex;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    justify-content: center;
+}
+.sociale{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 25px 0 25px;
+    transition: .2s;
+}
+.sociale:hover{
+    color: #023672;
+    }
+
+.tekst_podstrony{
+    width: 600px;
+    height: 600px;
+    margin: 10px auto;
+    background-color: #1b1b1b;
+    box-shadow: 0px 2px 7px  #000000;
+    text-align: center;
+    padding: 25px;
+    font-size: 18px;
+    color:white;
+}
+.tekst_podstrony img{
+    margin-top: 50px;
+    height: 300px;
+    box-shadow: 0px 2px 7px  #000000;
+}
+@media screen and (max-width: 1052px){
+    nav{
+        padding: 10px 40px 10px 0px;
+    }
+    nav ul li.logo{
+        display: none;
+    }
+    nav ul div.menu{
+        flex: 4;
+    }
+}
+@media screen and (max-width: 1052px){
+    nav ul li.burger{
+        display: block;
+    }
+    nav{
+        z-index: 1;
+        padding: 9px 40px 9px 0;
+
+    }
+    nav ul div.menu{
+        z-index: -1;
+        position: fixed;
+        top: -350px;
+        right: 0;
+        width: 100%;
+        background-color: #4d9efc;
+        display: inline-block;
+        transition: top .4s;
+    }
+    nav ul div.menu.show{
+        top: 70px;
+    }
+    nav ul div.menu li{
+        text-align: center;
+        line-height: 30px;
+        margin: 30px 0;
+    }
+    nav ul div.menu li a{
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 550px){
+    .links{
+        flex-direction: column;
+    }
+    .about{
+        padding: 15px;
+        height: 100px;
+    }
+    .social{
+        justify-content: left;
+        padding: 15px 0;
+    }
+    .tekst_podstrony img{
+        margin-top: 50px;
+        height: 200px;
+    }
+
+}
+@media screen and (max-width: 300px){
+
+    .tekst_podstrony img{
+        display: none;
+    }
+
+}

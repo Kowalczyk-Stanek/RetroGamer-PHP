@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.wrapper{
+width: 300px;
+}
+
+.form-select, .form-select option{
+    color: #222222;
+}

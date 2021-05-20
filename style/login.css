@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.produkty{
+    display: block;
+    min-height: 100vh;
+}
+.wrapper{  
+    width: 600px;
+    padding: 50px 150px 25px 150px;
+    margin: auto;
+    background-color: #1b1b1b;
+    box-shadow: 0px 2px 7px  #000000;
+}
+.guest{
+    margin: 10px auto;
+    height: 100px;
+    width: 600px;
+    background-color: #1b1b1b;
+    box-shadow: 0px 2px 7px  #000000;
+    padding: 25px;
+}
+.kupuje{
+    margin: auto;
+    text-align: center;
+    width: 350px;
+    background-color: #292929;
+    padding:10px 50px;
+    cursor: pointer;
+    font-size: 24px;  
+}
+.guest a{
+    color: white;
+    text-decoration: none;
+}
+.kupuje:hover{
+    background-color: #242323;
+}
+
+@media screen and (max-width: 750px){
+
+
+    .wrapper{  
+        width: calc(100vw - 150px);
+        min-width: 200px;
+        padding: 20px;
+    }
+    .guest{
+        width: calc(100vw - 150px);
+        min-width: 200px;
+    }
+    .kupuje{
+        padding:5px 20px;
+        width: 200px;
+        font-size: 18px;
+      
+}
